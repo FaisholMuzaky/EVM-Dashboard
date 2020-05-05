@@ -200,9 +200,10 @@ img {
   border-style: none;
 }
 
-.fa-chart-bar{
+.fa-chart-bar, .fa-columns,  .fa-book-open{
   font-size: 20px;
 }
+
 
 .img-profile{
   height: 72px;
@@ -2460,6 +2461,7 @@ textarea.form-control {
 }
 
 .btn-details{
+  width: 150px;
   text-align: center;
   cursor: pointer;
   padding: 0.375rem 0.75rem;
