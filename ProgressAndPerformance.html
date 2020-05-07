@@ -56,7 +56,8 @@
 
                         <!-- Project Administration -->
                         <a class="nav-link collapsed" href="#" data-toggle="collapse"
-                            data-target="#projectAdministration" aria-expanded="false" aria-controls="collapseLayouts">
+                            data-target="#projectAdministration" aria-expanded="false"
+                            aria-controls="projectAdministration">
                             <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                             Project Administration
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -64,7 +65,7 @@
                         <div class="collapse" id="projectAdministration" aria-labelledby="headingOne"
                             data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="Project-Administration.html">Kelola Proyek</a>
+                                <a class="nav-link " href="Project-Administration.html">Kelola Proyek</a>
                             </nav>
                         </div>
                         <!-- Project Administration -->
@@ -82,7 +83,7 @@
                         <div class="collapse" id="ProgressandPerformance" aria-labelledby="headingOne"
                             data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="ProgressAndPerformance.html">Input Data PV, EV, AC</a>
+                                <a class="nav-link active" href="#">Input Data PV, EV, AC</a>
                             </nav>
                         </div>
                         <!-- Progress and performance -->
@@ -102,7 +103,6 @@
                                 <a class="nav-link" href="#">Forecasting</a>
                             </nav>
                         </div>
-                        <!-- Reports -->
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
@@ -114,81 +114,120 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
-                    <h3 class="mt-4">Selamat Datang, Jhon Doe</h3>
+                    <h3 class="mt-4">Kelola Proyek</h3>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Progress and Performance</li>
+                        <li class="breadcrumb-item active">Input Data PV, EV, AC</li>
                     </ol>
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-8">
-                                <h5 class="card-title">Earn Value</h5>
-                                <h5 class="card-title">Management Dashboard</h5>
-                                <p class="card-text text-justify">Some quick example text to build on the
-                                    card title and
-                                    make up the bulk of the card's content.</p>
-                                <div id="detail" class="collapse text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.
+                            <div class="col-md-6 mb-4">
+                                <!-- Button trigger modal -->
+                                <div class="float-left ">
+                                    <button type="button" class="btn btn-addProyek" data-toggle="modal"
+                                        data-target="#btn-AddProgressItem">
+                                        Input Data Proyek
+                                    </button>
                                 </div>
-                                <a href="#" class="btn btn-details my-4" data-toggle="collapse"
-                                    data-target="#detail">Details</a>
                             </div>
-                            <div class="col-lg-4 text-center mb-4">
-                                <img class="img-fluid" src="assets/image-1.png">
+                            <div class="col-md-6 mb-4">
+                                <div class="float-right">
+                                    <select class="form-control">
+                                        <option>Name of Proyek</option>
+                                        <option>Add</option>
+                                        <option>Base</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4 text-center mb-4">
-                                <img class="img-fluid" src="assets/image-2.png">
-                            </div>
-                            <div class="col-md-8">
-                                <h4 class="my-4">Last Project</h4>
-                                <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2"
-                                    data-ride="carousel">
-                                    <div class="carousel-inner v-2" role="listbox">
-                                        <div class="carousel-item active">
-                                            <div class="col-12">
-                                                <div class="card mb-2">
-                                                    <div class="card-body card-Project">
-                                                        <h4 class="card-title font-weight-bold">Card title</h4>
-                                                        <p class="card-text text-justify">Lorem Ipsum is simply dummy
-                                                            text of the
-                                                            printing and typesetting industry. Lorem Ipsum has been the
-                                                            industry's standard dummy text ever since the 1500s,..</p>
-                                                        <a href="#" class="btn btn-details">Detail</a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="btn-AddProgressItem" tabindex="-1" role="dialog"
+                                aria-labelledby="btn-AddProgressItem" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="">Input Data Proyek
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         </div>
-                                        <div class="carousel-item">
-                                            <div class="col-12">
-                                                <div class="card mb-2">
-                                                    <div class="card-body card-Project">
-                                                        <h4 class="card-title font-weight-bold">Card title</h4>
-                                                        <p class="card-text text-justify">Lorem Ipsum is simply dummy
-                                                            text of the
-                                                            printing and typesetting industry. Lorem Ipsum has been the
-                                                            industry's standard dummy text ever since the 1500s,..</p>
-                                                        <a href="#" class="btn btn-details">Detail</a>
-                                                    </div>
+                                        <div class="modal-body">
+                                            <form action="#" class="text-center">
+                                                <div class="form-group">
+                                                    <label for="weeks">Minggu Ke</label>
+                                                    <input type="text" class="form-control text-center"
+                                                        placeholder="Masukan nilai Minggu ke" id="weeks">
                                                 </div>
-                                            </div>
+                                                <div class="form-group">
+                                                    <label for="pv">PV</label>
+                                                    <input type="text" class="form-control text-center"
+                                                        placeholder="Masukan nilai PV" id="pv">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pvK">PV Kumulatif</label>
+                                                    <input type="text" class="form-control text-center"
+                                                        placeholder="Masukan nilia PV Kumulatif" id="pvK">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="ev">EV</label>
+                                                    <input type="text" class="form-control text-center"
+                                                        placeholder="Masukan nilai EV" id="ev">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="evK">EV Kumulatif</label>
+                                                    <input type="text" class="form-control text-center"
+                                                        placeholder="Masukan nilai EV Kumulatif" id="costType">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="ac">AC</label>
+                                                    <input type="text" class="form-control text-center"
+                                                        placeholder="Masukan nilai AC" id="ac">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="acK">AC Kumulatif</label>
+                                                    <input type="text" class="form-control text-center"
+                                                        placeholder="Masukan nilai AC Kumulatif" id="acK">
+                                                </div>
+                                                <button type="submit" class="btn btn-submit">Submit</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <!--Controls-->
-                                <div class="controls-top text-center my-4">
-                                    <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
-                                            class="fas fa-chevron-left"></i></a>
-                                    <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
-                                            class="fas fa-chevron-right"></i></a>
-                                </div>
-                                <!--/.Controls-->
+                            </div>
+                            <!-- modal -->
+                        </div>
+                        <div class="my-4">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr class="text-center">
+                                            <th>Minggu Ke</th>
+                                            <th>PV Kumulatif</th>
+                                            <th>EV</th>
+                                            <th>EV Kumulatif</th>
+                                            <th>AC</th>
+                                            <th>AC Kumulatif</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">1.</td>
+                                            <td>123</td>
+                                            <td>123</td>
+                                            <td>123</td>
+                                            <td>61</td>
+                                            <td>123</td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-danger"><i
+                                                        class="far fa-trash-alt"></i></button>
+                                                <button type="button" class="btn btn-info"><i
+                                                        class="far fa-edit"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
