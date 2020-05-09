@@ -26,4 +26,7 @@
             next = $(this).siblings(':first');
         }
     });
+
+    // Data Picker Initialization
+    $('.datepicker').pickadate();
 })(jQuery);

@@ -105,83 +105,115 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
-                    <h3 class="mt-4">Selamat Datang, Jhon Doe</h3>
+                    <h3 class="mt-4">Kelola Proyek</h3>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Project Administration</li>
+                        <li class="breadcrumb-item active">Kelola Proyek</li>
                     </ol>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <h5 class="card-title">Earn Value</h5>
-                                <h5 class="card-title">Management Dashboard</h5>
-                                <p class="card-text text-justify">Some quick example text to build on the
-                                    card title and
-                                    make up the bulk of the card's content.</p>
-                                <div id="detail" class="collapse text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.
-                                </div>
-                                <a href="#" class="btn btn-details my-4" data-toggle="collapse"
-                                    data-target="#detail">Details</a>
-                            </div>
-                            <div class="col-lg-4 text-center mb-4">
-                                <img class="img-fluid" src="assets/image-1.png">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <!-- Button trigger modal -->
+                            <div class="posisi-kiri">
+                                <button type="button" class="btn btn-addProyek" data-toggle="modal"
+                                    data-target="#btn-AddProgressItem"><i class="fas fa-plus"></i>
+                                    Add Progresss Item
+                                </button>
                             </div>
                         </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4 text-center mb-4">
-                                <img class="img-fluid" src="assets/image-2.png">
+                        <div class="col-md-6 mb-4">
+                            <div class="posisi-kanan">
+                                <select class="form-control">
+                                    <option>Name of Proyek</option>
+                                    <option>Add</option>
+                                    <option>Base</option>
+                                </select>
                             </div>
-                            <div class="col-md-8">
-                                <h4 class="my-4">Last Project</h4>
-                                <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2"
-                                    data-ride="carousel">
-                                    <div class="carousel-inner v-2" role="listbox">
-                                        <div class="carousel-item active">
-                                            <div class="col-12">
-                                                <div class="card mb-2">
-                                                    <div class="card-body card-Project">
-                                                        <h4 class="card-title font-weight-bold">Card title</h4>
-                                                        <p class="card-text text-justify">Lorem Ipsum is simply dummy
-                                                            text of the
-                                                            printing and typesetting industry. Lorem Ipsum has been the
-                                                            industry's standard dummy text ever since the 1500s,..</p>
-                                                        <a href="#" class="btn btn-details">Detail</a>
-                                                    </div>
-                                                </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="btn-AddProgressItem" tabindex="-1" role="dialog"
+                            aria-labelledby="btn-AddProgressItem" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="">Progress Item
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="#" class="text-center">
+                                            <div class="form-group">
+                                                <label for="progresssItem">Progress Item</label>
+                                                <input type="text" class="form-control text-center"
+                                                    placeholder="Masukan Progress Item" id="progressItem">
                                             </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="col-12">
-                                                <div class="card mb-2">
-                                                    <div class="card-body card-Project">
-                                                        <h4 class="card-title font-weight-bold">Card title</h4>
-                                                        <p class="card-text text-justify">Lorem Ipsum is simply dummy
-                                                            text of the
-                                                            printing and typesetting industry. Lorem Ipsum has been the
-                                                            industry's standard dummy text ever since the 1500s,..</p>
-                                                        <a href="#" class="btn btn-details">Detail</a>
-                                                    </div>
-                                                </div>
+                                            <div class="form-group">
+                                                <label for="phase">Phase</label>
+                                                <input type="text" class="form-control text-center"
+                                                    placeholder="Masukan Phase" id="phase">
                                             </div>
-                                        </div>
+                                            <div class="form-group">
+                                                <label for="WBS">WBS</label>
+                                                <input type="text" class="form-control text-center"
+                                                    placeholder="Masukan WBS" id="wbs">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Activity">Activity</label>
+                                                <input type="text" class="form-control text-center"
+                                                    placeholder="Masukan Activity" id="activity">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="costType">Cost Type</label>
+                                                <input type="CostType" class="form-control text-center"
+                                                    placeholder="Masukan Cost Type" id="costType">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Pct">Pct %</label>
+                                                <input type="text" class="form-control text-center"
+                                                    placeholder="Masukan Pct" id="pct">
+                                            </div>
+                                            <button type="submit" class="btn btn-submit">Submit</button>
+                                        </form>
                                     </div>
                                 </div>
-                                <!--Controls-->
-                                <div class="controls-top text-center my-4">
-                                    <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
-                                            class="fas fa-chevron-left"></i></a>
-                                    <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
-                                            class="fas fa-chevron-right"></i></a>
-                                </div>
-                                <!--/.Controls-->
                             </div>
                         </div>
+                        <!-- modal -->
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>Number</th>
+                                    <th>Progress Item</th>
+                                    <th>Phase</th>
+                                    <th>WBS</th>
+                                    <th>Activity</th>
+                                    <th>Cost Type</th>
+                                    <th>Pct %</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">1.</td>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>61</td>
+                                    <td>2011/04/25</td>
+                                    <td>$320,800</td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-danger my-1"><i
+                                                class="far fa-trash-alt"></i></button>
+                                        <button type="button" class="btn btn-info my-1"><i
+                                                class="far fa-edit"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </main>

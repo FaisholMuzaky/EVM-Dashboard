@@ -208,6 +208,13 @@ img {
   font-size: 15px;
 }
 
+.posisi-kiri{
+  float: left;
+}
+
+.posisi-kanan{
+  float: right;
+}
 
 .img-profile{
   height: 72px;
@@ -565,10 +572,31 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+.date{
+  padding: 0;
+}
+
+@media (max-width: 576px){
+  .posisi-kiri{
+    float: none;
+    width: 100%;
+  }
+  .posisi-kanan{
+    float: none;
+    width: 100%;
+  }
+  .margin-top{
+    margin-top: 40px !important;
+  }
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
+
+  
 }
 @media (min-width: 768px) {
   .container {
@@ -642,7 +670,9 @@ pre code {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
-
+.date{
+  padding: 0;
+}
 .col {
   flex-basis: 0;
   flex-grow: 1;
@@ -2390,6 +2420,15 @@ textarea.form-control {
     justify-content: center;
     margin-bottom: 0;
   }
+
+  .date{
+    padding: 0;
+  }
+
+  .date label{
+    justify-content: left;
+  }
+  
   .form-inline .form-group {
     display: flex;
     flex: 0 0 auto;
@@ -4422,7 +4461,7 @@ input[type=button].btn-block {
 }
 
 .margin-top{
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .card > hr {
@@ -4444,7 +4483,7 @@ input[type=button].btn-block {
   padding: 1.25rem;
   color: #f5f5f5;
   background-color: #27496D;
-  border-radius: 0 0 calc(1.25rem - 1px) calc(1.25rem - 1px);
+  /* border-radius: 0 0 calc(1.25rem - 1px) calc(1.25rem - 1px); */
 }
 
 .card-EVM{
@@ -4501,12 +4540,13 @@ input[type=button].btn-block {
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #27496D;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0 0 calc(1.25rem - 1px) calc(1.25rem - 1px);
 }
-.card-footer:last-child {
+/* .card-footer:last-child {
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
-}
+} */
 
 .card-header-tabs {
   margin-right: -0.625rem;
